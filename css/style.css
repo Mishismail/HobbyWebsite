@@ -1,0 +1,125 @@
+/* Set the default font family, margins, padding, and line height for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Set the font family, alignment, font weight, and font size for heading elements h1 and h2 */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Styling for the horizontal header line */
+.header-line {
+    display: block;
+    width: 700px; 
+    height: 2px; 
+    background-color: #191818; 
+    margin: 0 auto; 
+    margin-bottom: 10px; 
+}
+
+/* Remove default list styles and padding for unordered lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #363636;
+    color: #f7bc0a;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #7e7d7d;
+    padding: 10px;
+}
+
+/* Style the navigation menu items as a horizontal list */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add right margin to navigation menu items to create spacing */
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Remove text decoration and set text color for navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #f7bc0a;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: justify;
+    background-color: rgb(226, 223, 223);
+}
+
+/* Add margin at the bottom of each section for spacing */
+section {
+    margin-bottom: 30px;
+}
+
+/* Style the table to collapse borders and add padding to table cells */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Add padding and border to table headers and cells */
+table th, table td {
+    padding: 10px;
+    border: 2px solid #070000;
+}
+
+/* Footer */
+footer {
+    background-color: #363636;
+    color: #f7bc0a;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Responsive Design */
+/* Apply specific styles for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    /* Reduce the width of the header line for smaller screens */
+    .header-line {
+        width: 90%;
+    }
+    
+    /* Reduce padding for table headers and cells on smaller screens */
+    table th, table td {
+        padding: 5px;
+    }
+}
+
+/* Button Style */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f7bc0a;
+    color: #363636;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change the background color of the button on hover for a nice effect */
+button:hover {
+    background-color: #dec26d;
+}

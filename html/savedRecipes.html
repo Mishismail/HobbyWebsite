@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Items - My Hobby Website</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1><b>Saved Recipes</b></h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="cuisines.html">Cuisines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="savedRecipes.html">Saved Recipes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2><b>Your Saved Recipes</b></h2>
+            <ul id="savedItemsList"></ul>
+
+                <!-- Saved items will be dynamically populated here -->
+            </ul>
+            <p>You have <b><span id="savedItemsCount">0</span></b> items in your "Saved Recipes" folder.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Cuisines Around The World. All rights reserved. | Created by Mishka</p>
+    </footer>
+
+    <script type='text/javascript' src='../javascript/saveForLater.js'></script>
+    
+</body>
+
+</html>
+

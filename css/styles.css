@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    font-family: impact;
+    font-size: 75px;
+    color: rgb(92, 53, 53);
+  }
+
+  h2 {
+    font-size: 30px;
+    color: rgb(92, 53, 53);
+  }
+
+  .product-image {
+    transition: transform 0.3s;
+  }
+
+  /* Hover effect to scale the product image */
+  .product-image:hover {
+    transform: scale(1.1);
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Hobby Website</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1><b>Contact Us</b></h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="cuisines.html">Cuisines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="savedRecipes.html">Saved Recipes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2><b>Get in Touch!</b></h2>
+            <form action="submit_form.php" method="POST" class="form-horizontal">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label"><b>Name:</b></label>
+                    <div class="col-sm-10">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label"><b>Email:</b></label>
+                    <div class="col-sm-10">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="message" class="col-sm-2 col-form-label"><b>Message:</b></label>
+                    <div class="col-sm-10">
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+
+            <br>
+
+            <form>
+                <h3>I'm always looking at improving my content and recipes!</h3>
+                <br>
+                <h5>Please select the types of recipes you'd like to see more often:</h5>
+                <input type="radio" id="vegetarian" name="recipeType" value="vegetarian">
+                <label for="vegetarian">Vegetarian</label><br>
+                <input type="radio" id="vegan" name="recipeType" value="vegan">
+                <label for="vegan">Halaal</label><br>
+                <input type="radio" id="gluten-free" name="recipeType" value="gluten-free">
+                <label for="gluten-free">Gluten-free</label><br>
+                <input type="radio" id="paleo" name="recipeType" value="paleo">
+                <label for="paleo">Paleo</label><br>
+                <input type="radio" id="other" name="recipeType" value="other">
+                <label for="other">Other</label><br>
+                <br>
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Cuisines Around The World. All rights reserved. | Created by Mishka</p>
+    </footer>
+
+    <script type='text/javascript' src='../javascript/saveForLater.js'></script>
+    
+</body>
+
+</html>
